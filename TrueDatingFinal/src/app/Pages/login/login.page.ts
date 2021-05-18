@@ -75,14 +75,6 @@ export class LoginPage implements OnInit {
 
 
 
-  logOut(){
-    this.auth.signOut().then(() => {
-      // Sign-out successful.
-      console.log("Logout Bem sucedido");
-    }).catch((error) => {
-      // An error happened.
-    });
-  }
 
 
 

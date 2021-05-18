@@ -11,4 +11,22 @@
   <ion-button>Register with email</ion-button>
   <ion-button>Facebook Register</ion-button>
 
+  <p>register</p>
+  email
+  <input [(ngModel)]="registerUserEmail">
+  password
+  <input [(ngModel)]="registerUserPassword">
+  consfirm Password
+  <input [(ngModel)]="registerConfirmPassword">
+
+  <ion-button (click)="Register()">Register</ion-button>
+
+
+  <ion-button (click)="test()">Test</ion-button>
+
+
+  <app-pages-redirect-div></app-pages-redirect-div>
+
+
+
 </ion-content>

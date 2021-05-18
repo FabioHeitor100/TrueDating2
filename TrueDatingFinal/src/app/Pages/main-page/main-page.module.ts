@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { MainPagePageRoutingModule } from './main-page-routing.module';
 
 import { MainPagePage } from './main-page.page';
+import {PagesRedirectDivComponent} from "../../Components/pages-redirect-div/pages-redirect-div.component";
 
 @NgModule({
   imports: [
@@ -15,6 +16,9 @@ import { MainPagePage } from './main-page.page';
     IonicModule,
     MainPagePageRoutingModule
   ],
-  declarations: [MainPagePage]
+  exports: [
+    PagesRedirectDivComponent
+  ],
+  declarations: [MainPagePage, PagesRedirectDivComponent]
 })
 export class MainPagePageModule {}

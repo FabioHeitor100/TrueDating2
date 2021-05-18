@@ -7,14 +7,26 @@
 <ion-content>
 
 
-  Email
-  <ion-input [(ngModel)]="userEmail"></ion-input>
-  Password
-  <ion-input [(ngModel)]="userPassword"></ion-input>
-  <ion-button (click)="login()">Login</ion-button>
-  <ion-button>Register</ion-button>
+  <h1>What works:</h1>
+  <p>- user registration</p>
+  <p>- user login</p>
 
-  <ion-button (click)="logOut()">LogOut</ion-button>
+
+
+
+
+
+  Email
+  <input [(ngModel)]="userEmail">
+  Password
+  <input [(ngModel)]="userPassword">
+  <ion-button (click)="login()">Login</ion-button>
+  <ion-button [routerLink]="['/register']">Register</ion-button>
   <ion-button (click)="test()">Test</ion-button>
+
+
+
+
+  <app-pages-redirect-div></app-pages-redirect-div>
 
 </ion-content>
