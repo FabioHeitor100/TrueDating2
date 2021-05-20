@@ -6,11 +6,49 @@
 
 <ion-content>
 
+  <p>Nome</p>
+  <input [(ngModel)]="name">
+  <p>Idade</p>
+  <input [(ngModel)]="age">
+  <p>Sexo</p>
+  <input [(ngModel)]="sex">
+  <p>Descrição</p>
+  <input [(ngModel)]="description">
+  <p></p>
+  <input>
 
 
 
 
-  <ion-button>Upload Images</ion-button>
+
+
+  <ion-button (click)="openGalery(1)">Upload image 1</ion-button>
+  <ion-button (click)="openGalery(2)">Upload image 2</ion-button>
+  <ion-button (click)="openGalery(3)">Upload image 3</ion-button>
+  <ion-button (click)="openGalery(4)">Upload image 4</ion-button>
+  <ion-button (click)="openGalery(5)">Upload image 5</ion-button>
+  <ion-button (click)="openGalery(6)">Upload image 6</ion-button>
+
+  <img [src]="userImage">
+
+
+  <img id="image1">
+  <img id="image2">
+  <img id="image3">
+  <img id="image4">
+  <img id="image5">
+
+
+
+
+
+
+
+  <ion-button (click)="registerProfile()">Save Profile</ion-button>
+
+
+  <ion-button (click)="getImageTest()">Test Get Url</ion-button>
+
 
 
 

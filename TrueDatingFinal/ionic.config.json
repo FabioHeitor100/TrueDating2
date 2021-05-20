@@ -1,5 +1,7 @@
 {
   "name": "TrueDatingFinal",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

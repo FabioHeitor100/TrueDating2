@@ -6,4 +6,33 @@
 
 <ion-content>
 
+  <ion-button>Create Profile</ion-button>
+
+
+
+
+  <H1>{{name}}</H1>
+  <H1>{{age}}</H1>
+  <H1>{{description}}</H1>
+
+
+<ion-img [src]="image" *ngFor="let image of userImages">{{image}}</ion-img>
+
+    <p *ngFor="let image of userImages">{{image}}</p>
+
+  <img src="https://firebasestorage.googleapis.com/v0/b/dateapp-298de.appspot.com/o/user%2Ftest%40test.com?alt=media&token=1de08d79-15ce-4d89-9ddd-aaf6201df735">
+
+  <img id="image1">
+  <img id="image2">
+  <img id="image3">
+  <img id="image4">
+  <img id="image5">
+  <img id="image6">
+
+
+  <ion-button (click)="getImageTest()">Test Get Url</ion-button>
+
+
+  <app-pages-redirect-div></app-pages-redirect-div>
+
 </ion-content>
